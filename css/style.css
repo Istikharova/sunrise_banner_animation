@@ -1,0 +1,93 @@
+/* === Small CSS Reset === */
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(170, 162, 162);
+}
+
+/* section sonnenuntergang */
+.container {
+  overflow: hidden;
+  background-color: #faa600;
+  position: relative;
+  width: 50%;
+  height: 30rem;
+  margin: 4rem auto;
+}
+.container .sonnenuntergang {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+.container .sonnenuntergang .balken {
+  background-color: white;
+  width: 100%;
+  height: 10rem;
+  position: absolute;
+  top: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .sonnenuntergang .balken .logo {
+  width: 80%;
+  height: 80%;
+}
+/* we sunrise button */
+.container .we {
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: rotate(-10deg);
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  display: none;
+}
+/* section 3 box */
+#boxes {
+  height: 100%;
+  display: none;
+  position: relative;
+}
+#boxes .box {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#boxes .box .titel,
+#boxes .box .text {
+  width: 20rem;
+  display: none;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5em;
+  color: #faa600;
+  align-self: center;
+  position: absolute;
+  left: 50%;
+  bottom: 80%;
+}
+#boxes .box .text {
+  color: #e6003c;
+  font-size: 2em;
+  left: 50%;
+  bottom: 60%;
+}
+#boxes .box .angebot {
+  display: none;
+  position: absolute;
+  top: 80%;
+}
+#boxes .box .angebot img {
+  width: 8rem;
+}
